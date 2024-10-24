@@ -1,0 +1,11 @@
+streamlit
+mysql
+mysql-connector-python
+datetime
+flask
+flask_sqlalchemy
+json
+paho-mqtt
+pandas
+plotly_express
+query
