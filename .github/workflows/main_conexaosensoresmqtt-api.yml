@@ -66,4 +66,4 @@ jobs:
         with:
           app-name: 'conexaoSensoresMQTT-API'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_AB2A96DF24F742798F5B93003E353301 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5894442957CD49BC871FCFC57CDB6678 }}
