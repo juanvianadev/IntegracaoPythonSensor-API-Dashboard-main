@@ -1,5 +1,17 @@
-- name: Login to Azure
-  uses: azure/login@v1.4
-  with:
-    creds: ${{ secrets.AZURE_CREDENTIALS }}
-    auth-type: 'SERVICE_PRINCIPAL'
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Login to Azure
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: Deploy to Azure Web App
+      uses: azure/webapps-deploy@v3
+      with:
+        app-name: "NOME_DO_SEU_APP"
+        slot-name: "production"
