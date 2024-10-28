@@ -1,6 +1,4 @@
-runtime: python310  # Use python310 ou outra versão suportada
-entrypoint: gunicorn -b :$PORT main:app  # Ajuste conforme a estrutura do seu código
-
-handlers:
-- url: /.*
-  script: auto
+- name: Azure Login
+  uses: azure/login@v1
+  with:
+    creds: ${{ secrets.AZURE_CREDENTIALS }}
