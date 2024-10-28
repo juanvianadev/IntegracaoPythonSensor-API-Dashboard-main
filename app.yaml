@@ -1,4 +1,5 @@
-- name: Azure Login
-  uses: azure/login@v1
+- name: Login to Azure
+  uses: azure/login@v1.4
   with:
     creds: ${{ secrets.AZURE_CREDENTIALS }}
+    auth-type: 'SERVICE_PRINCIPAL'
