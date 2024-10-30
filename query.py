@@ -7,10 +7,10 @@ import streamlit as st
 # Conexão
 
 conn = mysql.connector.connect(
-    host="127.0.0.1",
+    host="http://projetointegrador-graduacao.mysql.database.azure.com/",
     port="3306",
-    user="root",
-    password="Senai@134",
+    user="jessica",
+    password="senai@134",
     db="medidor"
     )
 
